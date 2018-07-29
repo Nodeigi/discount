@@ -1,0 +1,35 @@
+input[type="checkbox"] {
+  visibility: hidden;
+  margin-right: 15px;
+  position: relative;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  visibility: visible;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border-radius: 1px;
+  border: 1px solid #cccccc;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  visibility: visible;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-size: 14px;
+  background-image: url('./check.png');
+  top: 0;
+  left: 0;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
